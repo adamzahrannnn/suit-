@@ -19,11 +19,11 @@ var hasil = ''
 if ( comp == p ){
     hasil = 'SERI!';
 } else if ( p == "Jempol"){
-    hasil = ( comp == "Telunjuk" ) ? "MENANG!" : "KALAH!";
-} else if ( p == "Telunjuk"){
-    hasil = ( comp == "Jempol" ) ? "KALAH!" : "MENANG!";
-} else if ( p == "Kelingking"){
     hasil = ( comp == "Telunjuk" ) ? "KALAH!" : "MENANG!";
+} else if ( p == "Telunjuk"){
+    hasil = ( comp == "Jempol" ) ? "MENANG!" : "KALAH!";
+} else if ( p == "Kelingking"){
+    hasil = ( comp == "Telunjuk" ) ? "MENANG!" : "KALAH!";
 } else {
     hasil = "ISI YANG BENER JINGS"
 }
