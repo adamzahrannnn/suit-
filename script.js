@@ -20,16 +20,13 @@ if ( comp == p ){
     hasil = 'SERI!';
 }
 //  JEMPOL   
-    else if ( p == "Jempol"){hasil = ( comp == "Telunjuk" ) ? "MENANG!" };
-    else if ( p == "Jempol"){hasil = ( comp == "Kelingking" ) ? "KALAH!" ;
+    else if ( p == "Jempol"){hasil = ( comp == "Telunjuk" ) ? "MENANG!" : "KALAH!";
 } 
 //  TELUNJUK
-    else if ( p == "Telunjuk"){hasil = ( comp == "Jempol" ) ? "KALAH!"};
-    else if ( p == "Telunjuk"){hasil = ( comp == "Kelingking" ) ? "MENANG!";
+    else if ( p == "Telunjuk"){hasil = ( comp == "Jempol" ) ? "KALAH!": "MENANG!";
 } 
 // Kelingking
-    else if ( p == "Kelingking"){ hasil = ( comp == "Telunjuk" ) ? "MENANG!"};
-    else if ( p == "Kelingking"){ hasil = ( comp == "Telunjuk" ) ? "KALAH!";
+    else if ( p == "Kelingking"){ hasil = ( comp == "Telunjuk" ) ? "KALAH!" : "MENANG!";
 } else {
     hasil = "ISI YANG BENER JINGS"
 }
