@@ -18,12 +18,18 @@ var hasil = ''
 // alur
 if ( comp == p ){
     hasil = 'SERI!';
-} else if ( p == "Jempol"){
-    hasil = ( comp == "Telunjuk" ) ? "MENANG!" : "KALAH!";
-} else if ( p == "Telunjuk"){
-    hasil = ( comp == "Jempol" ) ? "KALAH!" : "MENANG!";
-} else if ( p == "Kelingking"){
-    hasil = ( comp == "Telunjuk" ) ? "KALAH!" : "MENANG!";
+}
+//  JEMPOL   
+    else if ( p == "Jempol"){hasil = ( comp == "Telunjuk" ) ? "MENANG!" ;
+    else if ( p == "Jempol"){hasil = ( comp == "Kelingking" ) ? "KALAH!" ;
+} 
+//  TELUNJUK
+    else if ( p == "Telunjuk"){hasil = ( comp == "Jempol" ) ? "KALAH!";
+    else if ( p == "Telunjuk"){hasil = ( comp == "Kelingking" ) ? "MENANG!";
+} 
+// Kelingking
+    else if ( p == "Kelingking"){ hasil = ( comp == "Telunjuk" ) ? "MENANG!";
+    else if ( p == "Kelingking"){ hasil = ( comp == "Telunjuk" ) ? "KALAH!";
 } else {
     hasil = "ISI YANG BENER JINGS"
 }
